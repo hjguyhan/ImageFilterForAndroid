@@ -22,7 +22,8 @@ public interface IImageFilter {
 	 public Image process(Image imageIn);
 	 
 	 public static double  LIB_PI = 3.14159265358979323846;
-	 
+
+
 	public static class Function{
 		//-------------------------------------------------------------------------------------
 		// basic function

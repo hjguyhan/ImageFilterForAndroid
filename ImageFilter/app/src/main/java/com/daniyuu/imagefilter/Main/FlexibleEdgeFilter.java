@@ -1,34 +1,22 @@
-/* 
- * HaoRan ImageFilter Classes v0.1
- * Copyright (C) 2012 Zhenjun Dai
- *
- * This library is free software; you can redistribute it and/or modify it
- * under the terms of the GNU Lesser General Public License as published by the
- * Free Software Foundation; either version 2.1 of the License, or (at your
- * option) any later version.
- *
- * This library is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
- * for more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this library; if not, write to the Free Software Foundation.
- */
-
-package com.daniyuu.imagefilter;
+package com.daniyuu.imagefilter.Main;
 
 import android.graphics.Color;
 import android.graphics.Paint;
 
+import com.daniyuu.imagefilter.EdgeFilter;
+import com.daniyuu.imagefilter.Image;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class EdgeFilter implements IImageFilter {
+/**
+ * Created by Daniyuu on 7/26/15.
+ */
+public class FlexibleEdgeFilter extends EdgeFilter {
+
     private double r_scale = 0.299;
     private double g_scale = 0.58;
     private double b_scale = 0.11;
-
 
 
     //@Override
@@ -108,6 +96,4 @@ public class EdgeFilter implements IImageFilter {
         this.b_scale = b_scale;
         this.g_scale = g_scale;
     }
-
 }
-
