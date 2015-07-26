@@ -99,6 +99,7 @@ public class ImageFilterMain extends Activity {
 
     private ImageView imageView;
     private TextView textView;
+    private TextView tv_describe;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -107,16 +108,15 @@ public class ImageFilterMain extends Activity {
 
         imageView = (ImageView) findViewById(R.id.imgfilter);
         textView = (TextView) findViewById(R.id.runtime);
-        //ע����androidϵͳ�ϣ��ֻ�ͼƬ�ߴ羡��������480*480��Χ��,�����ڸ�˹����ʱ��������ڴ����������
+        tv_describe = (TextView) findViewById(R.id.describe);
+
         Bitmap bitmap = BitmapFactory.decodeResource(ImageFilterMain.this.getResources(), R.drawable.image);
         imageView.setImageBitmap(bitmap);
 
         LoadImageFilter();
     }
 
-    /**
-     * ����ͼƬfilter
-     */
+
     private void LoadImageFilter() {
         Gallery gallery = (Gallery) findViewById(R.id.galleryFilter);
         final ImageFilterAdapter filterAdapter = new ImageFilterAdapter(
@@ -181,6 +181,7 @@ public class ImageFilterMain extends Activity {
                 imageView.setImageBitmap(result);
             }
             textView.setVisibility(View.GONE);
+            tv_describe.setText(filter.getClass().getName());
         }
     }
 
