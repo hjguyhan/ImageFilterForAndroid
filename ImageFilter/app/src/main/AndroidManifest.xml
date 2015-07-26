@@ -14,11 +14,15 @@
         <activity
             android:name=".Main.ImageFilterMain"
             android:label="@string/app_name" >
-
         </activity>
         <activity
             android:name=".Main.EdgeFilterTest"
             android:label="@string/title_activity_edge_filter_test" >
+
+        </activity>
+        <activity
+            android:name=".Main.MainTestActivity"
+            android:label="@string/title_activity_main_test" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

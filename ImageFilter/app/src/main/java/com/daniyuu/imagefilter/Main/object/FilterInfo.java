@@ -1,4 +1,4 @@
-package com.daniyuu.imagefilter.Main;
+package com.daniyuu.imagefilter.Main.object;
 
 import com.daniyuu.imagefilter.IImageFilter;
 
